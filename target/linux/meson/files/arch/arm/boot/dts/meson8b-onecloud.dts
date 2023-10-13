@@ -341,10 +341,10 @@
 &ethmac {
 	status = "okay";
 
-	pinctrl-0 = <&eth_rgmii_pins>;
+	pinctrl-0 = <0x00000020>;
 	pinctrl-names = "default";
 
-	phy-handle = <&eth_phy>;
+	phy-handle = <0x00000021>;
 	phy-mode = "rgmii-rxid";
 
 	mdio {
@@ -354,14 +354,16 @@
 
 		// Realtek RTL8211F (0x001cc916)
 		eth_phy: ethernet-phy@0 {
-			reg = <0>;
-
-			reset-assert-us = <10000>;
-			reset-deassert-us = <80000>;
-			reset-gpios = <&gpio GPIOH_4 GPIO_ACTIVE_LOW>;
-
-			interrupt-parent = <&gpio_intc>;
-			interrupts = <17 IRQ_TYPE_LEVEL_LOW>; // GPIOH 3
+			reg = <0x00000000>;
+			reset-assert-us = <0x00002710>;
+			reset-deassert-us = <0x00007530>;
+			reset-gpios = <0x0000000e 0x00000029 0x00000001>;
+			interrupt-parent = <0x00000023>;
+			interrupts = <0x00000011 0x00000008>;
+                        realtek,led-0-mode = <0x00000000>;
+                        realtek,led-1-mode = <0x0000001d>;
+                        realtek,led-2-mode = <0x0000001e>;
+                        phandle = <0x00000021>;
 		};
 	};
 };

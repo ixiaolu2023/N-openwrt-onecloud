@@ -18,5 +18,5 @@ echo 'src-git xd https://github.com/shiyu1314/onecloud-package' >>feeds.conf.def
 svn co https://github.com/shiyu1314/openwrt-onecloud/trunk/target/linux/meson target/linux/meson
 svn co https://github.com/immortalwrt/immortalwrt/trunk/package/emortal package/emortal
 echo 'src-git passwall_packages https://github.com/lxiaya/openwrt-passwall-packages;main' >>feeds.conf.default
-#echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2;main' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
+echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2;main' >>feeds.conf.default
+#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default

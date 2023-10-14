@@ -1,5 +1,7 @@
 # openwrt-onecloud-玩客云
 
+immortalwrt源码
+只包含openclash
 
 登录10.0.0.2
 

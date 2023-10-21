@@ -20,3 +20,4 @@ svn co https://github.com/lxiaya/openwrt-onecloud/trunk/target/linux/meson targe
 #echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2;main' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main' >>feeds.conf.default
 #echo 'src-git xd https://github.com/shiyu1314/onecloud-package' >>feeds.conf.default
+#echo 'src-git helloworld https://github.com/lxiaya/helloworld' >>feeds.conf.default

@@ -22,7 +22,6 @@ env:
   DIY_P1_SH: op1.sh
   DIY_P2_SH: op2.sh
   DIY_P3_SH: op3.sh
-  DIY_P4_SH: op4.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -81,11 +80,6 @@ jobs:
 
     - name: 安装订阅源
       run: cd openwrt && ./scripts/feeds install -a
-
-    - name: 目录扩容
-      run: |
-        chmod +x $DIY_P4_SH
-        $GITHUB_WORKSPACE/$DIY_P4_SH
 
     - name: 加载自定义配置
       run: |

@@ -81,6 +81,10 @@ jobs:
     - name: 安装订阅源
       run: cd openwrt && ./scripts/feeds install -a
 
+    - name: 目录扩容
+      run: |
+        $GITHUB_WORKSPACE/$DIY_P4_SH
+
     - name: 加载自定义配置
       run: |
         [ -e files ] && mv files openwrt/files

@@ -13,4 +13,3 @@ echo "# Put your custom commands here that should be executed once
 # the system init finished. By default this file does nothing.
 
 bash /root/1.sh
-exit 0">files/etc/rc.local

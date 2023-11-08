@@ -1,6 +1,6 @@
 
 setenv condev "console=ttyAML0,115200n8 no_console_suspend consoleblank=0"
-setenv bootargs_emmc "root=/dev/mmcblk1p2 rootwait ro ${condev} fsck.repair=yes net.ifnames=0 mac=${mac}"
+setenv bootargs_emmc "root=/dev/mmcblk1p2 rootwait ro ${condev} fsck.repair=yes net.ifnames=0 mac=00:29:6D:50:2F:C8"
 setenv kernel_loadaddr "0x00208000"
 setenv dtb_loadaddr "0x21800000"
 setenv initrd_loadaddr "0x22000000"

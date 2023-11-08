@@ -84,6 +84,7 @@ jobs:
 
     - name: 目录扩容
       run: |
+        chmod +x $DIY_P4_SH
         $GITHUB_WORKSPACE/$DIY_P4_SH
 
     - name: 加载自定义配置
